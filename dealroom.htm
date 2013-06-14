@@ -2,49 +2,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
 <head>
 
-
-<!--js/movendelete.js-->
-<script type="text/javascript" src="http://bit.ly/120Ik4H"></script>
-<!--js/contentmanager.js-->
-<script type="text/javascript" src="http://bit.ly/1abI8aB"></script>
-
+<script type="text/javascript" src="https://raw.github.com/Accenture-Jive/Content-Manager-App-UAT/master/js/jquery.loadmask.js?login=Bernd-Appelhans&token=c3f545fd5fbe9ddabc71c19780e40c22"></script>
+<script type="text/javascript" src="https://raw.github.com/Accenture-Jive/Content-Manager-App-UAT/master/js/movendelete.js?login=Bernd-Appelhans&token=660aafb1d9502f8122d2eb16455c0462"></script>
+<link href="https://raw.github.com/Accenture-Jive/Content-Manager-App-UAT/master/css/jquery.loadmask.css?login=Bernd-Appelhans&token=437e750661d60ad4ea2c5d3c961f2b14" rel="stylesheet" type="text/css" />
+<link type="text/css" href="https://raw.github.com/Accenture-Jive/Content-Manager-App-UAT/master/css/custom-theme/jquery-ui-1.8.16.custom.css?login=Bernd-Appelhans&token=b1220c78de36504dcb028ac8db4c700d" rel="stylesheet"/>
+<link type="text/css" href="https://raw.github.com/Accenture-Jive/Content-Manager-App-UAT/master/css/custom-theme/jive-elements.css?login=Bernd-Appelhans&token=659cde168996afa01ca4cb41107b58f6" rel="stylesheet"/>
+<link type="text/css" href="https://raw.github.com/Accenture-Jive/Content-Manager-App-UAT/master/css/custom-theme/jive-icons.css?login=Bernd-Appelhans&token=a4570f5501bcae29bfe6d6b38c859fe3" rel="stylesheet"/>
+<link type="text/css" href="https://raw.github.com/Accenture-Jive/Content-Manager-App-UAT/master/css/security-groups.css?login=Bernd-Appelhans&token=e1df86032af0537d6d21d0b8e7fc5eba" rel="stylesheet"/>
+<link type="text/css" href="https://raw.github.com/Accenture-Jive/Content-Manager-App-UAT/master/style.css?login=Bernd-Appelhans&token=81f110b6d3a2f90a096d21470d3af8d7" rel="stylesheet"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
 <script src="http://malsup.github.com/jquery.form.js"></script>
 <script src="http://malsup.github.com/jquery.form.js"></script> 
-<script src="http://code.jquery.com/jquery-latest.js"></script> 
-
-<!--css/custom-theme/jquery-ui-1.8.16.custom.css-->
-<link type="text/css" href="http://bit.ly/XhQ0l8" rel="stylesheet"/>
-<!--css/custom-theme/jive-elements.css-->
-<link type="text/css" href="http://bit.ly/16BE9RL" rel="stylesheet"/>
-<!--css/custom-theme/jive-icons.css-->
-<link type="text/css" href="http://bit.ly/16x24ju" rel="stylesheet"/>
-<!--css/security-groups.css-->
-<link type="text/css" href="http://bit.ly/14JAVNL" rel="stylesheet"/>
-<!--style.css-->
-<link type="text/css" href="http://bit.ly/10Bm0j2" rel="stylesheet"/>
-<!--css/jquery.datepick.css-->
-<LINK href="http://bit.ly/10jpfxd" rel="stylesheet" type="text/css"/>		
-
+<script src="http://code.jquery.com/jquery-latest.js"></script> 	
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/contentmanager.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
+<script type="text/javascript">
+</script>
 </head>
 
 <body id="maskLoad" style="text-align: center" onLoad="onPageLoad()">
 <div id="stylized" class="myform" style="font-family:Tahoma; width:650px; height:420px;margin-top:70px;">
-<table width="600" border="2">
-<span id="hint">hint (mouseover me)</span>
+<table width="600">
 <tr>
-<td colspan="2"><div style="text-align:center;width:600px;height:0px;font-size:15px;font-weight:bold;">Jive Content Manager App Dev Version_shiv_copy</div></td></tr>
+<td colspan="2"><div style="text-align:center;width:600px;height:0px;font-size:15px;font-weight:bold;">Jive Content Manager App</div></td></tr>
 <tr>
 <td style="width:350px;">
-<div id="actionDiv">
 <label style="margin-left:239px;width:130px;text-align:center;align:center;">
 Select Bulk Action:
 </label>
-</div>
 <br/><br/>
 </td>
 </tr>
@@ -82,13 +70,13 @@ Copy To:
 </td></tr>
 <tr>
 <td>
-<label id="from_space" class="xlabel" style="width:250px;height:33px;margin-left:100px;font-weight:normal;text-align:left;display:none;padding-top:10px;">Copy From Space</label>
-<label id="from_group" class="xlabel" style="width:250px;height:33px;margin-left:100px;font-weight:normal;text-align:left;display:none;padding-top:10px;">Copy From Group</label>
-<label id="from_project" class="xlabel" style="width:250px;height:33px;margin-left:100px;font-weight:normal;text-align:left;display:none;padding-top:10px;">Copy From Project</label></td>
+<label id="from_space" style="width:250px;margin-left:100px;font-weight:normal;text-align:left;display:none;padding-top:10px;">Copy From Space</label>
+<label id="from_group" style="width:250px;margin-left:100px;font-weight:normal;text-align:left;display:none;padding-top:10px;">Copy From Group</label>
+<label id="from_project" style="width:250px;margin-left:100px;font-weight:normal;text-align:left;display:none;padding-top:10px;">Copy From Project</label></td>
 <td>
-<label id="to_space" class="xlabel" style="width:250px;height:33px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Space</label>
-<label id="to_group" class="xlabel" style="width:250px;height:33px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Group</label>
-<label id="to_project" class="xlabel" style="width:250px;height:33px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Project</label>
+<label id="to_space" style="width:250px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Space</label>
+<label id="to_group" style="width:250px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Group</label>
+<label id="to_project" style="width:250px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Project</label>
 </td>
 </tr>
 
@@ -119,9 +107,9 @@ Copy To:
 <label id ="deleteFrom" style="display:none;margin-left:-126px;position:absolute; margin-top:86px;"><br/>Delete From:</label>
 <tr>
 <tr>
-<label id="del_from_space" class="xlabel" style="width:250px;height:33px;margin-left:175px;position:absolute; margin-top:120px;font-weight:normal;text-align:center;display:none;">Delete From Space</label>
-<label id="del_from_group" class="xlabel" style="width:250px;height:33px;margin-left:175px;position:absolute; margin-top:120px;font-weight:normal;text-align:center;display:none;">Delete From Group</label>
-<label id="del_from_project" class="xlabel" style="width:250px;height:33px;margin-left:175px;position:absolute; margin-top:120px;font-weight:normal;text-align:center;display:none;">Delete From Project</label>
+<label id="del_from_space" style="width:250px;margin-left:175px;position:absolute; margin-top:120px;font-weight:normal;text-align:center;display:none;">Delete From Space</label>
+<label id="del_from_group" style="width:250px;margin-left:175px;position:absolute; margin-top:120px;font-weight:normal;text-align:center;display:none;">Delete From Group</label>
+<label id="del_from_project" style="width:250px;margin-left:175px;position:absolute; margin-top:120px;font-weight:normal;text-align:center;display:none;">Delete From Project</label>
 </tr>
 <td>
 <br/>
@@ -146,9 +134,9 @@ style="display:none;margin-left:-80px;position:absolute; margin-top:110px;">
 <label id ="upFrom" style="display:none;margin-left:-135px;position:absolute; margin-top:70px;"><br/>Upload To:</label>
 <tr>
 <tr>
-<label id="up_from_space" class="xlabel" style="width:250px;height:33px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Upload to Space</label>
-<label id="up_from_group" class="xlabel" style="width:250px;height:33px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Upload to Group</label>
-<label id="up_from_project" class="xlabel" style="width:250px;height:33px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Upload to Project</label>
+<label id="up_from_space" style="width:250px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Upload to Space</label>
+<label id="up_from_group" style="width:250px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Upload to Group</label>
+<label id="up_from_project" style="width:250px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Upload to Project</label>
 </tr>
 <td>
 <br/>
@@ -176,9 +164,9 @@ style="display:none;margin-left:-80px;position:absolute; margin-top:90px;">
 <label id ="dwnFrom" style="display:none;margin-left:210px;position:absolute; margin-top:62px;"><br/>Download From:</label>
 <tr>
 <tr>
-<label id="dwn_from_space" class="xlabel" style="width:250px;height:33px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Download From Space</label>
-<label id="dwn_from_group" class="xlabel" style="width:250px;height:33px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Download From Group</label>
-<label id="dwn_from_project" class="xlabel" style="width:250px;height:33px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Download From Project</label>
+<label id="dwn_from_space" style="width:250px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Download From Space</label>
+<label id="dwn_from_group" style="width:250px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Download From Group</label>
+<label id="dwn_from_project" style="width:250px;margin-left:175px;position:absolute; margin-top:110px;font-weight:normal;text-align:center;display:none;">Download From Project</label>
 </tr>
 <td>
 <br/>
@@ -271,8 +259,12 @@ style="display:none;margin-left:-80px;position:absolute; margin-top:90px;width:1
 </select> 
 </td>
 </tr>
+
 <tr>
 <span id ="catTo" style="display:none;margin-left:210px;font-weight:bold;position:absolute; margin-top:125px;"></span>
+</tr>
+<tr>
+<span id ="cat_updating_text" style="display:none;margin-left:210px;font-weight:bold;position:absolute; margin-top:90px;"></span>
 </tr>
 <tr>
 <input type="button" id="cat_select_items_button" value="Select Contents" name="select_items" style="display:none;margin-left:255px;font-weight:bold;position:absolute; margin-top:155px;" onclick="javascript:populateContent1()"/>
@@ -280,40 +272,6 @@ style="display:none;margin-left:-80px;position:absolute; margin-top:90px;width:1
 <tr>
 </tr>
 </div>
-
-<div id="finalCatShow" style="display:none">
-<div id="actionLabelDiv">
-<label style="margin-left:250px;width:130px;text-align:center;align:center;margin-top:-105px">
-Selected Bulk Action:
-</label>
-</div>
-<label id ="finalCatFrom" style="margin-left:250px;position:absolute; margin-top:-60px;"><br/>Manage Categories In:</label>
-<tr>
-<td>
-<br/>
-</td>
-</tr>
-<tr>
-<tr>
-<label id ="finalSelCat" style="margin-left:230px;position:absolute;"><br/>Selected Category:</label>
-<span id ="selectedCat" style="margin-left:-70px;position:absolute; margin-top:45px;"></span>
-</tr>
-<td>
-<br/>
-</td>
-</tr>
-<tr>
-<span id ="finalCatTo" style="margin-left:-70px;font-weight:bold;position:absolute; margin-top:60px;">Updating Categories</span>
-</tr>
-<tr>
-</tr>
-</div>
-
-
-
-<div id="selected_items_categories" style="margin-top:190px;font-family:Tahoma;overflow-y:auto;height:120px;">
-</div>
-
 <div id="tagShow">
 <label id ="tagFrom" style="display:none;margin-left:225px;position:absolute; margin-top:-30px;"><br/>Manage Tags In:</label>
 <tr>
@@ -348,53 +306,19 @@ style="display:none;margin-left:-65px;position:absolute; margin-top:0px;">
 <span id ="tagTo" style="display:none;margin-left:235px;font-weight:bold;position:absolute; margin-top:120px;"></span>
 </tr>
 <tr>
+<span id ="tag_update_text" style="display:none;margin-left:235px;font-weight:bold;position:absolute; margin-top:120px;"></span>
+</tr>
+<tr>
 <input type="button" id="tag_select_items_button" value="Select Contents" name="select_items" style="display:none;margin-left:255px;font-weight:bold;position:absolute; margin-top:150px;" onclick="javascript:populateContent1();"/>
 
 </tr>
 <tr>
 </tr>
 </div>
-
-<div id="finalTagShow">
-<label id ="finale_tagFrom" style="margin-left:200px;position:absolute;display:none; margin-top:-80px;"><br/>Selected Place:</label>
-<tr>
-<tr>
-<label id="finale_tag_from_space" class="xlabel" style="width:250px;height:33px;margin-left:170px;position:absolute; margin-top:-40px;font-weight:normal;text-align:center;display:none;">Manage Tags in Space</label>
-<label id="finale_tag_from_group" class="xlabel" style="width:250px;height:33px;margin-left:170px;position:absolute; margin-top:-30px;font-weight:normal;text-align:center;display:none;">Manage Tags in Group</label>
-<label id="finale_tag_from_project" class="xlabel" style="width:250px;height:33px;margin-left:170px;position:absolute; margin-top:-30px;font-weight:normal;text-align:center;display:none;">Manage Tags in Project</label>
-</tr>
-<td>
-<br/>
-<select name="finale_tag_place" id="finale_tag_place" onchange="javascript:tagFromPlace();" 
-style="display:none;margin-left:-75px;position:absolute; margin-top:-30px;">
-<option value="select_one">Select Place</option>
-<option value="select_space">Select Space</option>
-<option value="select_group">Select Group</option>
-<option value="select_project">Select Project</option>
-</select> 
-</td>
-</tr>
-<tr>
-<tr>
-<label id ="finalSelTag" style="display:none;margin-left:200px;position:absolute; margin-top:-20px;"><br/>Selected Tag</label>
-</tr>
-<td>
-<br/>
-<input type="text" name="tag_sel" id="finale_tag_sel" style="margin-left:250px;position:absolute; margin-top:30px;width:120px;">
-<input type="button" id="finale_add_tag_button" value="OK" name="add_tag_button" style="display:none;margin-left:60px;position:absolute; margin-top:30px;" onclick="javascript:tagSel1();"/>
-<label id="finale_add_tag" style="display:none;text-align:center;margin-left:230px;position:absolute; margin-top:10px;width:120px;">Copy From Space</label>
-</td>
-</tr>
-<tr>
-<span id ="finale_finalTagTo" style="margin-left:235px;font-weight:bold;position:absolute; margin-top:50px;"></span>
-</tr>
-<tr>
-<input type="button" id="finale_tag_select_items_button" value="Select Contents" name="select_items" style="margin-left:255px;font-weight:bold;position:absolute; margin-top:150px;" onclick="javascript:populateContent1();"/>
-</tr>
-<tr>
-</tr>
+<div id="selected_items_categories" style="display:none;margin-top:110px;font-family:Tahoma;overflow-y:auto;height:120px;">
 </div>
-<div id="selected_items_tags" style="margin-top:75px;font-family:Tahoma;overflow-y:auto;height:120px;">
+<div id="refresh_app_button" style="display:none;margin-top:-50px;font-family:Tahoma;overflow-y:auto;height:120px;">
+	<input type="button" id="refresh_app" value="Start from the beginning" name="select_items" style="display:none;margin-left:-100px;font-weight:bold;position:absolute; margin-top:0px;" onclick="javascript:startFromBeginning()"/>
 </div>
 
 </div>
@@ -466,29 +390,6 @@ The "move from" place has to be different from the "move to" place.
 <div id="footer" style="font-family:Tahoma">&copy; Accenture 2012-13</div>
 
 <style> 
-
-#hint
-{
-cursor:pointer;
-}
-
-.tooltip
-{
-margin:8px;
-padding:8px;
-border:1px solid #3778C7;
-font-weight:bold;
-background-color:#C1D5F8;
-position: absolute;
-z-index: 2;
-}
-
-.xlabel
-{
-overflow: hidden;
-text-overflow: ellipsis
-}
-
 .borderadd 
 {
 border-radius: 4px;

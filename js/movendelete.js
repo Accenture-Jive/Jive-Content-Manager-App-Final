@@ -214,27 +214,27 @@ function movenContents() {
         }
         if (errorArray.length > 0) {
             alert('Message:\n\nYou have insufficient rights to update all the content selected.\n\nYou need to have group administration or space moderation rights to update content with restricted authorship (e.g. discussions started by other users).\n\nPlease contact your group or space admin to get the necessary rights.');
-            $("#from_place").show();
+           /* $("#from_place").show();
             $("#to_place").show();
             $("#cmdu").hide();
             $("#button_div").show();
             $("#src_place").show();
             $('#selected_items').css("margin-top", "-105px");
             $('#button_div').css("margin-top", "10px");
-            $("#select_items_button").show();
+            $("#select_items_button").show();*/
         } else {
 
             console.log("contents  succesfully moved");
             //alert("contents  succesfully moved");
             console.log("contents  succesfully moved");
-            $("#from_place").show();
+            /*$("#from_place").show();
             $("#to_place").show();
             $("#cmdu").hide();
             $("#button_div").show();
             $("#src_place").show();
             $('#selected_items').css("margin-top", "-105px");
             $('#button_div').css("margin-top", "10px");
-            $("#select_items_button").show();
+            $("#select_items_button").show();*/
             var str = 'Moving completed. Please click   <a href=' + finalurl + '>here </a>  for the new location of your content.';
             document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>" + str.fontcolor("#3778C7") + "</span>";
 
@@ -301,25 +301,25 @@ function deleteContents() {
         if (errorArray.length > 0) {
             alert('Message:\n\nYou have insufficient rights to update all the content selected.\n\nYou need to have group administration or space moderation rights to update content with restricted authorship (e.g. discussions started by other users).\n\nPlease contact your group or space admin to get the necessary rights.');
             $("#cmdu").hide();
-            $("#src_place").show();
+            /*$("#src_place").show();
             $('#del_place').css("margin-left", "250px");
             $('#del_select_items_button').css("margin-left", "250px");
             $("#del_place").show();
             $("#deleteTo").show();
-            $("#del_select_items_button").show();
+            $("#del_select_items_button").show();*/
         } else {
 
             console.log("contents  succesfully deleted");
             alert("contents  succesfully deleted");
             alert('finalurl = ' + finalurl);
             console.log("contents  succesfully deleted");
-            $("#cmdu").hide();
+           /* $("#cmdu").hide();
             $("#src_place").show();
             $('#del_place').css("margin-left", "250px");
             $('#del_select_items_button').css("margin-left", "250px");
             $("#del_place").show();
             $("#deleteTo").show();
-            $("#del_select_items_button").show();
+            $("#del_select_items_button").show();*/
             //alert('finalurl = '+finalurl);
             var str = 'Deleting completed. This can be verified here: <a href=' + finalurl + '>' + src_space_name + ' - Contents</a>';
             document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>" + str.fontcolor("#3778C7") + "</span>";
