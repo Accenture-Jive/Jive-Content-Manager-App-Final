@@ -33,7 +33,7 @@ function movendelete(action, srcgroup_place_url, target_groupurl, Grp_file_json,
     src_space_name = src_space_name1;
     to_place_blog_url = to_place_blog_url1;
     browserName = browserName1;
-    alert("redirection_url = " + redirection_url);
+   // alert("redirection_url = " + redirection_url);
     finalurl = redirection_url + '/content';
 
     var discussionSplitValue = Grp_disc_json.split(";");
@@ -245,7 +245,7 @@ function movenContents() {
 function deleteContents() {
     //alert("Method :" + deleteContents);
 	finalurl = source_html_url + '/content';
-	alert("final url"+finalurl);
+	//alert("final url"+finalurl);
     if (movendeleteIndex < totalContentSelfUrlArray.length) {
 
         var contentURL = totalContentSelfUrlArray[movendeleteIndex];
