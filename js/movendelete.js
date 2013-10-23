@@ -243,7 +243,8 @@ function movenContents() {
 }
 
 function deleteContents() {
-    alert("Method :" + deleteContents);
+    //alert("Method :" + deleteContents);
+	alert("final url"+finalurl);
     if (movendeleteIndex < totalContentSelfUrlArray.length) {
 
         var contentURL = totalContentSelfUrlArray[movendeleteIndex];
@@ -251,7 +252,7 @@ function deleteContents() {
         var toCategoriesArray;
         var updatedCategoryList = new Array();
 
-        alert("contentURL got is =" + contentURL);
+        //alert("contentURL got is =" + contentURL);
         console.log("contentURL got is =" + contentURL);
         osapi.jive.corev3.contents.get({
             fields: '@all',
@@ -278,7 +279,7 @@ function deleteContents() {
 
 
             contentDeleteResponseObj.destroy().execute(function (contentUpdateResponse) {
-                alert(JSON.stringify(contentUpdateResponse));
+              //  alert(JSON.stringify(contentUpdateResponse));
                 console.log("UPDated -- " + JSON.stringify(contentUpdateResponse));
                 if (contentUpdateResponse.error) {
                     console.log("updated --" + JSON.stringify(contentUpdateResponse));
@@ -311,7 +312,7 @@ function deleteContents() {
 
             console.log("contents  succesfully deleted");
             alert("contents  succesfully deleted");
-            alert('finalurl = ' + finalurl);
+          //  alert('finalurl = ' + finalurl);
             console.log("contents  succesfully deleted");
            /* $("#cmdu").hide();
             $("#src_place").show();
@@ -320,7 +321,7 @@ function deleteContents() {
             $("#del_place").show();
             $("#deleteTo").show();
             $("#del_select_items_button").show();*/
-            alert('finalurl = '+finalurl);
+            //alert('finalurl = '+finalurl);
             var str = 'Deleting completed. This can be verified here: <a href=' + finalurl + '>' + src_space_name + ' - Contents</a>';
             document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>" + str.fontcolor("#3778C7") + "</span>";
 
