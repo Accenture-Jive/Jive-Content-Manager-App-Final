@@ -244,6 +244,7 @@ function movenContents() {
 
 function deleteContents() {
     //alert("Method :" + deleteContents);
+	finalurl = source_html_url + '/content';
 	alert("final url"+finalurl);
     if (movendeleteIndex < totalContentSelfUrlArray.length) {
 

@@ -2007,7 +2007,6 @@ function toProjectRequest() {
 
             to_url = data.resources.self.ref;
             redirection_url = data.resources.html.ref;
-			alert("To project request redirection_url:"+redirection_url);
             dest_space_name = to_place_name;
 
             //changing the selection to 'Change Place'	   
