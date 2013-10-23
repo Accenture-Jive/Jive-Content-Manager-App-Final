@@ -33,7 +33,7 @@ function movendelete(action, srcgroup_place_url, target_groupurl, Grp_file_json,
     src_space_name = src_space_name1;
     to_place_blog_url = to_place_blog_url1;
     browserName = browserName1;
-    alert("redirection_url = " + redirection_url);
+    //alert("redirection_url = " + redirection_url);
     finalurl = redirection_url + '/content';
 
     var discussionSplitValue = Grp_disc_json.split(";");
@@ -133,7 +133,7 @@ function movendelete(action, srcgroup_place_url, target_groupurl, Grp_file_json,
         document.getElementById("frame1").contentDocument.body.style.color = 'Grey';
         document.getElementById("frame1").contentDocument.body.innerHTML = str + "in Progress.<br>Please leave this window open until the " + str + "process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>" + str2.fontcolor("#3778C7") + "</span>";
     }
-    alert("to_place_blog_url = " + to_place_blog_url);
+    //alert("to_place_blog_url = " + to_place_blog_url);
     targetUrl = target_groupurl;
     movendeleteIndex = 0;
 
@@ -320,7 +320,7 @@ function deleteContents() {
             $("#del_place").show();
             $("#deleteTo").show();
             $("#del_select_items_button").show();*/
-            //alert('finalurl = '+finalurl);
+            alert('finalurl = '+finalurl);
             var str = 'Deleting completed. This can be verified here: <a href=' + finalurl + '>' + src_space_name + ' - Contents</a>';
             document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>" + str.fontcolor("#3778C7") + "</span>";
 
