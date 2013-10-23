@@ -3121,6 +3121,7 @@ function startDeleting() {
     $("#deleteTo").text("Deleting this:");
 
     // send data to JS file movendelete for move.
+	alert("from content manager js :"+redirection_url);
     movendelete('delete', space_url, to_url, Grp_file_json, Grp_doc_json, Grp_disc_json, Grp_idea_json, Grp_poll_json, Grp_blog_json, dest_space_name, redirection_url, source_html_url, src_space_name, to_place_blog_url, browserName);
 };
 
